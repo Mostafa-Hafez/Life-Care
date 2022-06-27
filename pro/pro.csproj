@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCC602CC-725F-4642-874F-008E91BE8257}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pro</RootNamespace>
+    <AssemblyName>pro</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44365</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="Admin\Add_Employee.aspx" />
+    <Content Include="Admin\Change_pass.aspx" />
+    <Content Include="Admin\css\aos.css" />
+    <Content Include="Admin\css\bootstrap.min.css" />
+    <Content Include="Admin\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="Admin\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="Admin\css\bootstrap\bootstrap.css" />
+    <Content Include="Admin\css\jquery-ui.css" />
+    <Content Include="Admin\css\magnific-popup.css" />
+    <Content Include="Admin\css\owl.carousel.min.css" />
+    <Content Include="Admin\css\owl.theme.default.min.css" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="Admin\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="Admin\fonts\icomoon\demo.html" />
+    <Content Include="Admin\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="Admin\fonts\icomoon\Read Me.txt" />
+    <Content Include="Admin\fonts\icomoon\style.css" />
+    <Content Include="Admin\images\bg_1.jpg" />
+    <Content Include="Admin\images\bg_2.jpg" />
+    <Content Include="Admin\images\hero_1.jpg" />
+    <Content Include="Admin\images\person_1.jpg" />
+    <Content Include="Admin\images\person_2.jpg" />
+    <Content Include="Admin\images\person_3.jpg" />
+    <Content Include="Admin\images\person_4.jpg" />
+    <Content Include="Admin\images\person_5.jpg" />
+    <Content Include="Admin\images\products_1.png" />
+    <Content Include="Admin\images\product_01.png" />
+    <Content Include="Admin\images\product_02.png" />
+    <Content Include="Admin\images\product_03.png" />
+    <Content Include="Admin\images\product_04.png" />
+    <Content Include="Admin\images\product_05.png" />
+    <Content Include="Admin\images\product_06.png" />
+    <Content Include="Admin\images\product_07_large.png" />
+    <Content Include="Admin\images\shoe.png" />
+    <Content Include="Admin\images\wave.svg" />
+    <Content Include="Admin\images\women.jpg" />
+    <Content Include="Admin\js\aos.js" />
+    <Content Include="Admin\js\bootstrap.min.js" />
+    <Content Include="Admin\js\jquery-3.3.1.min.js" />
+    <Content Include="Admin\js\jquery-ui.js" />
+    <Content Include="Admin\js\jquery.magnific-popup.min.js" />
+    <Content Include="Admin\js\main.js" />
+    <Content Include="Admin\js\owl.carousel.min.js" />
+    <Content Include="Admin\js\popper.min.js" />
+    <Content Include="Admin\js\slick.min.js" />
+    <Content Include="Admin\Medicines.aspx" />
+    <Content Include="Admin\Messages.aspx" />
+    <Content Include="Admin\Sales.aspx" />
+    <Content Include="Anonymous\About.aspx" />
+    <Content Include="Anonymous\Contact.aspx" />
+    <Content Include="Anonymous\css\aos.css" />
+    <Content Include="Anonymous\css\bootstrap.min.css" />
+    <Content Include="Anonymous\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="Anonymous\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="Anonymous\css\bootstrap\bootstrap.css" />
+    <Content Include="Anonymous\css\jquery-ui.css" />
+    <Content Include="Anonymous\css\magnific-popup.css" />
+    <Content Include="Anonymous\css\owl.carousel.min.css" />
+    <Content Include="Anonymous\css\owl.theme.default.min.css" />
+    <Content Include="Anonymous\css\style.css" />
+    <Content Include="Anonymous\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="Anonymous\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="Anonymous\fonts\icomoon\demo.html" />
+    <Content Include="Anonymous\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="Anonymous\fonts\icomoon\Read Me.txt" />
+    <Content Include="Anonymous\fonts\icomoon\style.css" />
+    <Content Include="Anonymous\Home.aspx" />
+    <Content Include="Anonymous\images\bg_1.jpg" />
+    <Content Include="Anonymous\images\bg_2.jpg" />
+    <Content Include="Anonymous\images\hero_1.jpg" />
+    <Content Include="Anonymous\images\person_1.jpg" />
+    <Content Include="Anonymous\images\person_2.jpg" />
+    <Content Include="Anonymous\images\person_3.jpg" />
+    <Content Include="Anonymous\images\person_4.jpg" />
+    <Content Include="Anonymous\images\person_5.jpg" />
+    <Content Include="Anonymous\images\products_1.png" />
+    <Content Include="Anonymous\images\product_01.png" />
+    <Content Include="Anonymous\images\product_02.png" />
+    <Content Include="Anonymous\images\product_03.png" />
+    <Content Include="Anonymous\images\product_04.png" />
+    <Content Include="Anonymous\images\product_05.png" />
+    <Content Include="Anonymous\images\product_06.png" />
+    <Content Include="Anonymous\images\product_07_large.png" />
+    <Content Include="Anonymous\images\shoe.png" />
+    <Content Include="Anonymous\images\wave.svg" />
+    <Content Include="Anonymous\images\women.jpg" />
+    <Content Include="Anonymous\js\aos.js" />
+    <Content Include="Anonymous\js\bootstrap.min.js" />
+    <Content Include="Anonymous\js\jquery-3.3.1.min.js" />
+    <Content Include="Anonymous\js\jquery-ui.js" />
+    <Content Include="Anonymous\js\jquery.magnific-popup.min.js" />
+    <Content Include="Anonymous\js\main.js" />
+    <Content Include="Anonymous\js\owl.carousel.min.js" />
+    <Content Include="Anonymous\js\popper.min.js" />
+    <Content Include="Anonymous\js\slick.min.js" />
+    <Content Include="Anonymous\Services.aspx" />
+    <Content Include="App_Data\data.sql" />
+    <Content Include="App_Themes\blue\StyleSheet1.css" />
+    <Content Include="App_Themes\red\StyleSheet1.css" />
+    <Content Include="cart.html" />
+    <Content Include="checkout.html" />
+    <Content Include="contact.html" />
+    <Content Include="css\aos.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap\bootstrap-grid.css" />
+    <Content Include="css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap\bootstrap.css" />
+    <Content Include="css\colors.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\flaticon.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\owl.theme.default.min.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\versions.css" />
+    <Content Include="fonts\icomoon\demo-files\demo.css" />
+    <Content Include="fonts\icomoon\demo-files\demo.js" />
+    <Content Include="fonts\icomoon\demo.html" />
+    <Content Include="fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="fonts\icomoon\Read Me.txt" />
+    <Content Include="fonts\icomoon\style.css" />
+    <Content Include="images\bg_1.jpg" />
+    <Content Include="images\bg_2.jpg" />
+    <Content Include="images\hero_1.jpg" />
+    <Content Include="images\person_1.jpg" />
+    <Content Include="images\person_2.jpg" />
+    <Content Include="images\person_3.jpg" />
+    <Content Include="images\person_4.jpg" />
+    <Content Include="images\person_5.jpg" />
+    <Content Include="images\pharmacy-logo.png" />
+    <Content Include="images\products_1.png" />
+    <Content Include="images\product_01.png" />
+    <Content Include="images\product_02.png" />
+    <Content Include="images\product_03.png" />
+    <Content Include="images\product_04.png" />
+    <Content Include="images\product_05.png" />
+    <Content Include="images\product_06.png" />
+    <Content Include="images\product_07_large.png" />
+    <Content Include="images\service-icon1.png" />
+    <Content Include="images\service-icon2.png" />
+    <Content Include="images\service-icon3.png" />
+    <Content Include="images\service-icon4.png" />
+    <Content Include="images\service-icon5.png" />
+    <Content Include="images\service-icon6.png" />
+    <Content Include="images\shoe.png" />
+    <Content Include="images\wave.svg" />
+    <Content Include="images\women.jpg" />
+    <Content Include="imgMed\1.png" />
+    <Content Include="imgMed\2.png" />
+    <Content Include="imgMed\3.png" />
+    <Content Include="imgMed\4.png" />
+    <Content Include="imgMed\5.png" />
+    <Content Include="imgMed\7.png" />
+    <Content Include="imgstaff\ahmed.png" />
+    <Content Include="imgstaff\doaa.png" />
+    <Content Include="imgstaff\omar.png" />
+    <Content Include="imgstaff\samy.png" />
+    <Content Include="imgstaff\mustafa.png" />
+    <Content Include="index.html" />
+    <Content Include="js\aos.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.magnific-popup.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="js\slick.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="shop-single.html" />
+    <Content Include="shop.html" />
+    <Content Include="Staff\Add_Invoice.aspx" />
+    <Content Include="Staff\Change_Password.aspx" />
+    <Content Include="Staff\css\aos.css" />
+    <Content Include="Staff\css\bootstrap.min.css" />
+    <Content Include="Staff\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="Staff\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="Staff\css\bootstrap\bootstrap.css" />
+    <Content Include="Staff\css\jquery-ui.css" />
+    <Content Include="Staff\css\magnific-popup.css" />
+    <Content Include="Staff\css\owl.carousel.min.css" />
+    <Content Include="Staff\css\owl.theme.default.min.css" />
+    <Content Include="Staff\css\style.css" />
+    <Content Include="Staff\Edit_Invoice.aspx" />
+    <Content Include="Staff\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="Staff\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="Staff\fonts\icomoon\demo.html" />
+    <Content Include="Staff\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="Staff\fonts\icomoon\Read Me.txt" />
+    <Content Include="Staff\fonts\icomoon\style.css" />
+    <Content Include="Staff\images\bg_1.jpg" />
+    <Content Include="Staff\images\bg_2.jpg" />
+    <Content Include="Staff\images\hero_1.jpg" />
+    <Content Include="Staff\images\person_1.jpg" />
+    <Content Include="Staff\images\person_2.jpg" />
+    <Content Include="Staff\images\person_3.jpg" />
+    <Content Include="Staff\images\person_4.jpg" />
+    <Content Include="Staff\images\person_5.jpg" />
+    <Content Include="Staff\images\products_1.png" />
+    <Content Include="Staff\images\product_01.png" />
+    <Content Include="Staff\images\product_02.png" />
+    <Content Include="Staff\images\product_03.png" />
+    <Content Include="Staff\images\product_04.png" />
+    <Content Include="Staff\images\product_05.png" />
+    <Content Include="Staff\images\product_06.png" />
+    <Content Include="Staff\images\product_07_large.png" />
+    <Content Include="Staff\images\shoe.png" />
+    <Content Include="Staff\images\wave.svg" />
+    <Content Include="Staff\images\women.jpg" />
+    <Content Include="Staff\js\aos.js" />
+    <Content Include="Staff\js\bootstrap.min.js" />
+    <Content Include="Staff\js\jquery-3.3.1.min.js" />
+    <Content Include="Staff\js\jquery-ui.js" />
+    <Content Include="Staff\js\jquery.magnific-popup.min.js" />
+    <Content Include="Staff\js\main.js" />
+    <Content Include="Staff\js\owl.carousel.min.js" />
+    <Content Include="Staff\js\popper.min.js" />
+    <Content Include="Staff\js\slick.min.js" />
+    <Content Include="Staff\Store.aspx" />
+    <Content Include="testtheme.aspx" />
+    <Content Include="thankyou.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Add_Employee.aspx.cs">
+      <DependentUpon>Add_Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Add_Employee.aspx.designer.cs">
+      <DependentUpon>Add_Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Change_pass.aspx.cs">
+      <DependentUpon>Change_pass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Change_pass.aspx.designer.cs">
+      <DependentUpon>Change_pass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Medicines.aspx.cs">
+      <DependentUpon>Medicines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Medicines.aspx.designer.cs">
+      <DependentUpon>Medicines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Messages.aspx.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Messages.aspx.designer.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sales.aspx.cs">
+      <DependentUpon>Sales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sales.aspx.designer.cs">
+      <DependentUpon>Sales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Anonymous\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anonymous\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Anonymous\Classlang.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anonymous\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anonymous\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Anonymous\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anonymous\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Anonymous\Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anonymous\Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resourse.AR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resourse.AR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resourse.cs">
+      <DependentUpon>Resourse.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy.Master.cs">
+      <DependentUpon>Pharmacy.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pharmacy.Master.designer.cs">
+      <DependentUpon>Pharmacy.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff\Add_Invoice.aspx.cs">
+      <DependentUpon>Add_Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Add_Invoice.aspx.designer.cs">
+      <DependentUpon>Add_Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Change_Password.aspx.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Change_Password.aspx.designer.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Edit_Invoice.aspx.cs">
+      <DependentUpon>Edit_Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Edit_Invoice.aspx.designer.cs">
+      <DependentUpon>Edit_Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Store.aspx.cs">
+      <DependentUpon>Store.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Store.aspx.designer.cs">
+      <DependentUpon>Store.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testtheme.aspx.cs">
+      <DependentUpon>testtheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testtheme.aspx.designer.cs">
+      <DependentUpon>testtheme.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="fonts\icomoon\selection.json" />
+    <Content Include="images\.DS_Store" />
+    <Content Include="Anonymous\scss\.DS_Store" />
+    <Content Include="Anonymous\scss\_site-base.scss" />
+    <Content Include="Anonymous\scss\_site-blocks.scss" />
+    <Content Include="Anonymous\scss\_site-navbar.scss" />
+    <Content Include="Anonymous\scss\bootstrap\.DS_Store" />
+    <Content Include="Anonymous\scss\bootstrap\_alert.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_badge.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_button-group.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_buttons.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_card.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_carousel.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_close.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_code.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_forms.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_functions.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_grid.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_images.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_input-group.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_list-group.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_media.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_mixins.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_modal.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_nav.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_navbar.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_pagination.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_popover.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_print.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_progress.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_reboot.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_root.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_tables.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_transitions.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_type.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_utilities.scss" />
+    <Content Include="Anonymous\scss\bootstrap\_variables.scss" />
+    <Content Include="Anonymous\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Anonymous\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Anonymous\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Anonymous\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="Anonymous\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="Anonymous\scss\style.scss" />
+    <Content Include="Anonymous\images\.DS_Store" />
+    <Content Include="Anonymous\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="Anonymous\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Anonymous\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="Anonymous\fonts\icomoon\selection.json" />
+    <Content Include="Anonymous\css\bootstrap.min.css.map" />
+    <Content Include="Admin\scss\.DS_Store" />
+    <Content Include="Admin\scss\_site-base.scss" />
+    <Content Include="Admin\scss\_site-blocks.scss" />
+    <Content Include="Admin\scss\_site-navbar.scss" />
+    <Content Include="Admin\scss\bootstrap\.DS_Store" />
+    <Content Include="Admin\scss\bootstrap\_alert.scss" />
+    <Content Include="Admin\scss\bootstrap\_badge.scss" />
+    <Content Include="Admin\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Admin\scss\bootstrap\_button-group.scss" />
+    <Content Include="Admin\scss\bootstrap\_buttons.scss" />
+    <Content Include="Admin\scss\bootstrap\_card.scss" />
+    <Content Include="Admin\scss\bootstrap\_carousel.scss" />
+    <Content Include="Admin\scss\bootstrap\_close.scss" />
+    <Content Include="Admin\scss\bootstrap\_code.scss" />
+    <Content Include="Admin\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="Admin\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Admin\scss\bootstrap\_forms.scss" />
+    <Content Include="Admin\scss\bootstrap\_functions.scss" />
+    <Content Include="Admin\scss\bootstrap\_grid.scss" />
+    <Content Include="Admin\scss\bootstrap\_images.scss" />
+    <Content Include="Admin\scss\bootstrap\_input-group.scss" />
+    <Content Include="Admin\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Admin\scss\bootstrap\_list-group.scss" />
+    <Content Include="Admin\scss\bootstrap\_media.scss" />
+    <Content Include="Admin\scss\bootstrap\_mixins.scss" />
+    <Content Include="Admin\scss\bootstrap\_modal.scss" />
+    <Content Include="Admin\scss\bootstrap\_nav.scss" />
+    <Content Include="Admin\scss\bootstrap\_navbar.scss" />
+    <Content Include="Admin\scss\bootstrap\_pagination.scss" />
+    <Content Include="Admin\scss\bootstrap\_popover.scss" />
+    <Content Include="Admin\scss\bootstrap\_print.scss" />
+    <Content Include="Admin\scss\bootstrap\_progress.scss" />
+    <Content Include="Admin\scss\bootstrap\_reboot.scss" />
+    <Content Include="Admin\scss\bootstrap\_root.scss" />
+    <Content Include="Admin\scss\bootstrap\_tables.scss" />
+    <Content Include="Admin\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Admin\scss\bootstrap\_transitions.scss" />
+    <Content Include="Admin\scss\bootstrap\_type.scss" />
+    <Content Include="Admin\scss\bootstrap\_utilities.scss" />
+    <Content Include="Admin\scss\bootstrap\_variables.scss" />
+    <Content Include="Admin\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Admin\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Admin\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Admin\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="Admin\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="Admin\scss\style.scss" />
+    <Content Include="Admin\images\.DS_Store" />
+    <Content Include="Admin\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="Admin\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Admin\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="Admin\fonts\icomoon\selection.json" />
+    <Content Include="Admin\css\bootstrap.min.css.map" />
+    <Content Include="App_Themes\blue\Skin1.skin" />
+    <Content Include="App_Themes\red\Skin1.skin" />
+    <None Include="packages.config" />
+    <Content Include="Pharmacy.Master" />
+    <Content Include="scss\.DS_Store" />
+    <Content Include="scss\bootstrap\.DS_Store" />
+    <Content Include="scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="scss\bootstrap\bootstrap.scss" />
+    <Content Include="scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="scss\bootstrap\mixins\_float.scss" />
+    <Content Include="scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="scss\bootstrap\mixins\_image.scss" />
+    <Content Include="scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="scss\bootstrap\mixins\_size.scss" />
+    <Content Include="scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="scss\bootstrap\utilities\_align.scss" />
+    <Content Include="scss\bootstrap\utilities\_background.scss" />
+    <Content Include="scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="scss\bootstrap\utilities\_display.scss" />
+    <Content Include="scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="scss\bootstrap\utilities\_float.scss" />
+    <Content Include="scss\bootstrap\utilities\_position.scss" />
+    <Content Include="scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="scss\bootstrap\utilities\_text.scss" />
+    <Content Include="scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="scss\bootstrap\_alert.scss" />
+    <Content Include="scss\bootstrap\_badge.scss" />
+    <Content Include="scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="scss\bootstrap\_button-group.scss" />
+    <Content Include="scss\bootstrap\_buttons.scss" />
+    <Content Include="scss\bootstrap\_card.scss" />
+    <Content Include="scss\bootstrap\_carousel.scss" />
+    <Content Include="scss\bootstrap\_close.scss" />
+    <Content Include="scss\bootstrap\_code.scss" />
+    <Content Include="scss\bootstrap\_custom-forms.scss" />
+    <Content Include="scss\bootstrap\_dropdown.scss" />
+    <Content Include="scss\bootstrap\_forms.scss" />
+    <Content Include="scss\bootstrap\_functions.scss" />
+    <Content Include="scss\bootstrap\_grid.scss" />
+    <Content Include="scss\bootstrap\_images.scss" />
+    <Content Include="scss\bootstrap\_input-group.scss" />
+    <Content Include="scss\bootstrap\_jumbotron.scss" />
+    <Content Include="scss\bootstrap\_list-group.scss" />
+    <Content Include="scss\bootstrap\_media.scss" />
+    <Content Include="scss\bootstrap\_mixins.scss" />
+    <Content Include="scss\bootstrap\_modal.scss" />
+    <Content Include="scss\bootstrap\_nav.scss" />
+    <Content Include="scss\bootstrap\_navbar.scss" />
+    <Content Include="scss\bootstrap\_pagination.scss" />
+    <Content Include="scss\bootstrap\_popover.scss" />
+    <Content Include="scss\bootstrap\_print.scss" />
+    <Content Include="scss\bootstrap\_progress.scss" />
+    <Content Include="scss\bootstrap\_reboot.scss" />
+    <Content Include="scss\bootstrap\_root.scss" />
+    <Content Include="scss\bootstrap\_tables.scss" />
+    <Content Include="scss\bootstrap\_tooltip.scss" />
+    <Content Include="scss\bootstrap\_transitions.scss" />
+    <Content Include="scss\bootstrap\_type.scss" />
+    <Content Include="scss\bootstrap\_utilities.scss" />
+    <Content Include="scss\bootstrap\_variables.scss" />
+    <Content Include="scss\style.scss" />
+    <Content Include="scss\_site-base.scss" />
+    <Content Include="scss\_site-blocks.scss" />
+    <Content Include="scss\_site-navbar.scss" />
+    <Content Include="Staff\scss\.DS_Store" />
+    <Content Include="Staff\scss\_site-base.scss" />
+    <Content Include="Staff\scss\_site-blocks.scss" />
+    <Content Include="Staff\scss\_site-navbar.scss" />
+    <Content Include="Staff\scss\bootstrap\.DS_Store" />
+    <Content Include="Staff\scss\bootstrap\_alert.scss" />
+    <Content Include="Staff\scss\bootstrap\_badge.scss" />
+    <Content Include="Staff\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Staff\scss\bootstrap\_button-group.scss" />
+    <Content Include="Staff\scss\bootstrap\_buttons.scss" />
+    <Content Include="Staff\scss\bootstrap\_card.scss" />
+    <Content Include="Staff\scss\bootstrap\_carousel.scss" />
+    <Content Include="Staff\scss\bootstrap\_close.scss" />
+    <Content Include="Staff\scss\bootstrap\_code.scss" />
+    <Content Include="Staff\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="Staff\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Staff\scss\bootstrap\_forms.scss" />
+    <Content Include="Staff\scss\bootstrap\_functions.scss" />
+    <Content Include="Staff\scss\bootstrap\_grid.scss" />
+    <Content Include="Staff\scss\bootstrap\_images.scss" />
+    <Content Include="Staff\scss\bootstrap\_input-group.scss" />
+    <Content Include="Staff\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Staff\scss\bootstrap\_list-group.scss" />
+    <Content Include="Staff\scss\bootstrap\_media.scss" />
+    <Content Include="Staff\scss\bootstrap\_mixins.scss" />
+    <Content Include="Staff\scss\bootstrap\_modal.scss" />
+    <Content Include="Staff\scss\bootstrap\_nav.scss" />
+    <Content Include="Staff\scss\bootstrap\_navbar.scss" />
+    <Content Include="Staff\scss\bootstrap\_pagination.scss" />
+    <Content Include="Staff\scss\bootstrap\_popover.scss" />
+    <Content Include="Staff\scss\bootstrap\_print.scss" />
+    <Content Include="Staff\scss\bootstrap\_progress.scss" />
+    <Content Include="Staff\scss\bootstrap\_reboot.scss" />
+    <Content Include="Staff\scss\bootstrap\_root.scss" />
+    <Content Include="Staff\scss\bootstrap\_tables.scss" />
+    <Content Include="Staff\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Staff\scss\bootstrap\_transitions.scss" />
+    <Content Include="Staff\scss\bootstrap\_type.scss" />
+    <Content Include="Staff\scss\bootstrap\_utilities.scss" />
+    <Content Include="Staff\scss\bootstrap\_variables.scss" />
+    <Content Include="Staff\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Staff\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Staff\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Staff\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="Staff\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="Staff\scss\style.scss" />
+    <Content Include="Staff\images\.DS_Store" />
+    <Content Include="Staff\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="Staff\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Staff\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="Staff\fonts\icomoon\selection.json" />
+    <Content Include="Staff\css\bootstrap.min.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resourse.AR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resourse.AR.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resourse.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resourse.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53362</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:8080/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

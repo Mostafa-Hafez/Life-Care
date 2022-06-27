@@ -1,0 +1,183 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pharmacy.master.cs" Inherits="pro.Pharmacy" EnableTheming="true"  %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 26px;
+        }
+        .auto-style4 {
+            height: 48px;
+        }
+        .auto-style5 {
+            width: 260px;
+        }
+    </style>
+</head>
+<body  >
+    <form id="form1" runat="server">
+       <center>
+        <table class="auto-style1">
+                    <tr>
+                        <td style="text-align:right; color: #000000;" class="auto-style4">
+                            <div style="text-align:left; margin-left: 1px;">
+
+                                <table class="w-100">
+                                    <tr>
+                                        <td class="auto-style5" rowspan="2">
+
+                                <asp:ImageButton ID="ImageButton1" runat="server" Height="111px" ImageUrl="~/images/pharmacy-logo.png" Width="118px" PostBackUrl="~/Anonymous/Home.aspx" />
+
+                                        </td>
+                                        <td style="text-align:right">
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:right">
+                            <%= Resources.Resourse.theme %>
+                            &nbsp;&nbsp;&nbsp;
+                            <asp:Button ID="Button1" runat="server" Text='<%$ Resources:Resourse ,red  %>' OnClick="Button1_Click" BackColor="White" BorderStyle="None" ForeColor="Red" />
+                            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text='<%$ Resources:Resourse , blue %>' BackColor="White" BorderStyle="None" ForeColor="Blue" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:LoginView ID="LoginView1" runat="server" OnViewChanged="LoginView1_ViewChanged">
+                                <AnonymousTemplate>
+                                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="Large" PostBackUrl="~/Anonymous/Home.aspx"><%= Resources.Resourse.Home  %></asp:LinkButton>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="Large" PostBackUrl="~/Anonymous/Services.aspx"><%= Resources.Resourse.Services  %></asp:LinkButton>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <asp:LinkButton ID="LinkButton3" runat="server" Font-Size="Large" PostBackUrl="~/Anonymous/About.aspx"><%= Resources.Resourse.About  %></asp:LinkButton>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <asp:LinkButton ID="LinkButton4" runat="server" Font-Size="Large" PostBackUrl="~/Anonymous/Contact.aspx"><%= Resources.Resourse.Contact  %></asp:LinkButton>
+                                </AnonymousTemplate>
+                                <RoleGroups>
+                                    <asp:RoleGroup Roles="Admin">
+                                        <ContentTemplate>
+                                            <asp:LinkButton ID="LinkButton5" runat="server" Font-Size="Large" PostBackUrl="~/Admin/Sales.aspx"><%= Resources.Resourse.sales  %></asp:LinkButton>
+                                            &nbsp;&nbsp;
+                                            <asp:LinkButton ID="LinkButton6" runat="server" Font-Size="Large" PostBackUrl="~/Admin/Medicines.aspx"><%= Resources.Resourse.medicines  %></asp:LinkButton>
+                                            &nbsp;&nbsp;&nbsp;
+                                            <asp:LinkButton ID="LinkButton7" runat="server" Font-Size="Large" PostBackUrl="~/Admin/Add_Employee.aspx"><%= Resources.Resourse.Addemp  %></asp:LinkButton>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="LinkButton13" runat="server" PostBackUrl="~/Admin/Messages.aspx"><%= Resources.Resourse.messages  %></asp:LinkButton>
+&nbsp;<asp:LinkButton ID="LinkButton8" runat="server" Font-Size="Large" PostBackUrl="~/Admin/Change_pass.aspx"><%= Resources.Resourse.changpass  %></asp:LinkButton>
+                                            &nbsp;
+                                        </ContentTemplate>
+                                    </asp:RoleGroup>
+                                    <asp:RoleGroup Roles="Staff">
+                                        <ContentTemplate>
+                                            <asp:LinkButton ID="LinkButton9" runat="server" Font-Size="Large" PostBackUrl="~/Staff/Add_Invoice.aspx"><%= Resources.Resourse.addinv  %></asp:LinkButton>
+                                            &nbsp;&nbsp;&nbsp;
+                                            <asp:LinkButton ID="LinkButton10" runat="server" Font-Size="Large" PostBackUrl="~/Staff/Edit_Invoice.aspx"><%= Resources.Resourse.editinv %></asp:LinkButton>
+                                            &nbsp;&nbsp;&nbsp;
+                                            <asp:LinkButton ID="LinkButton11" runat="server" Font-Size="Large" PostBackUrl="~/Staff/Store.aspx"><%= Resources.Resourse.store  %></asp:LinkButton>
+                                            &nbsp;&nbsp;&nbsp;
+                                            <asp:LinkButton ID="LinkButton12" runat="server" Font-Size="Large" PostBackUrl="~/Staff/Change_Password.aspx"><%= Resources.Resourse.changpass  %></asp:LinkButton>
+                                        </ContentTemplate>
+                                    </asp:RoleGroup>
+                                </RoleGroups>
+                            </asp:LoginView>
+&nbsp;
+                            <asp:LoginStatus ID="LoginStatus1" runat="server" Font-Size="Large" />
+                        &nbsp;<asp:Button ID="Button3" runat="server" BackColor="White" BorderStyle="None" Height="25px" Text='<%$ Resources:Resourse ,lang %>' Width="37px" OnClick="Button3_Click" />
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    </table>
+           <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+            <div class="block-7">
+              <h3 class="footer-heading mb-4"><%= Resources.Resourse.About %></h3>
+              <p><%= Resources.Resourse.titl3 %></p>
+            </div>
+
+          </div>
+          <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+            <h3 class="footer-heading mb-4"><%= Resources.Resourse.quick %></h3>
+            <ul class="list-unstyled">
+              <li><a href="Anonymous/Services.aspx"><%= Resources.Resourse.Services %></a></li> 
+               <li><a href="Anonymous/About.aspx"><%= Resources.Resourse.About %></a></li>
+              <li><a href="Anonymous/Contact.aspx"><%= Resources.Resourse.Contact %></a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4"><%= Resources.Resourse.Contact %></h3>
+              <ul class="list-unstyled">
+                <li class="address"><%= Resources.Resourse.address %></li>
+                <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
+                <li class="email">eldawaa333@yahoo.com</li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is Edited
+              with <i class="icon-heart" aria-hidden="true"></i> by <a href="#"
+                class="text-primary">Musrtafa</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+           </center>
+    </form>
+</body>
+</html>
